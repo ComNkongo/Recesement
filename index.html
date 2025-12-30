@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deuxième Recensement des Entrepreneurs Gabonais - NKONGÔ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LOGO NKONGÔ AU-DESSUS DU TITRE -->
+        <div class="logo-nkongo-top">
+            <img src="img/Logo Nkongô.png" alt="Logo NKONGÔ">
+        </div>
+
+        <h1>Deuxième Recensement des Entrepreneurs Gabonais</h1>
+        <h2>Secteur des matériaux du BTP</h2>
+        <p class="subtitle">Réservé aux adhérents du Collectif NKONGÔ</p>
+
+        <!-- FORMULAIRE -->
+        <form action="mailto:collectifnkongo@gmail.com" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Informations générales</legend>
+
+                <label>Nom de l’entreprise *</label>
+                <input type="text" required>
+
+                <label>Nom et prénom du gérant *</label>
+                <input type="text" required>
+
+                <label>Numéro CNI du gérant *</label>
+                <input type="text" required>
+
+                <label>Téléphone *</label>
+                <input type="tel" required>
+
+                <label>Email</label>
+                <input type="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Activité principale</legend>
+                <label><input type="radio" name="activite" required> Fourniture d’agrégats</label>
+                <label><input type="radio" name="activite"> Fabrication de matériaux du BTP</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Détails de l’activité</legend>
+
+                <label>Produits proposés</label>
+                <select multiple>
+                    <option>Sable</option>
+                    <option>Gravier</option>
+                    <option>Latérite</option>
+                    <option>Concassé</option>
+                    <option>Briques</option>
+                    <option>Parpaings</option>
+                    <option>Pavés</option>
+                    <option>Béton</option>
+                    <option>Préfabrication</option>
+                </select>
+
+                <label>Localisation *</label>
+                <input type="text" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pièces à fournir</legend>
+
+                <label>Fiche circuit remplie *</label>
+                <input type="file" required>
+
+                <label>Copie CNI du gérant *</label>
+                <input type="file" required>
+
+                <label>Fiche d’adhésion NKONGÔ *</label>
+                <input type="file" required>
+            </fieldset>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" required>
+                    Je certifie l’exactitude des informations fournies
+                </label>
+            </div>
+
+            <button type="submit">Soumettre l’inscription</button>
+
+            <p class="deadline">📅 Date limite : <strong>Mercredi 31 Décembre 2025</strong></p>
+
+        </form>
+
+        <!-- LOGOS PARTENAIRES EN BAS DU FORMULAIRE -->
+        <div class="partenaires-bas">
+            <img src="img/Logo Nkongô.png" alt="Logo NKONGÔ">
+            <img src="img/BIKERER.jpeg" alt="Logo BIKERE">
+            <img src="img/DGCCRF.jpeg" alt="Logo DGCCRF">
+            <img src="img/SMAG-Logo-AA25.jpg" alt="Logo DGCCRF">
+        </div>
+
+    </div>
+
+    <footer>
+        © Lionel Concept – 12/2025
+    </footer>
+
+</body>
+
+</html>

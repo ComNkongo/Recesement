@@ -1,0 +1,205 @@
+/* ==============================
+   BASE GÉNÉRALE
+============================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f5;
+    color: #333;
+}
+
+/* ==============================
+   CONTENEUR PRINCIPAL
+============================== */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ==============================
+   LOGO NKONGÔ (HAUT)
+============================== */
+.logo-nkongo-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo-nkongo-top img {
+    width: 130px;
+    height: auto;
+}
+
+/* ==============================
+   TITRES
+============================== */
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #0a5c38;
+    font-size: 26px;
+}
+
+h2 {
+    margin: 5px 0 10px 0;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: bold;
+    color: #b8860b;
+    margin-bottom: 25px;
+}
+
+/* ==============================
+   FORMULAIRE
+============================== */
+form {
+    margin-top: 10px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #0a5c38;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select[multiple] {
+    height: 120px;
+}
+
+/* RADIO */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* CHECKBOX */
+.checkbox {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.checkbox input {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* ==============================
+   BOUTON
+============================== */
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #0a5c38;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08704a;
+}
+
+/* ==============================
+   DATE LIMITE
+============================== */
+.deadline {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+/* ==============================
+   PARTENAIRES (BAS)
+============================== */
+.partenaires-bas {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 2px solid #e0e0e0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partenaires-bas img {
+    width: 90px;
+    height: auto;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ==============================
+   RESPONSIVE MOBILE
+============================== */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .partenaires-bas {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
